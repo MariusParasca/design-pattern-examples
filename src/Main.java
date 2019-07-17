@@ -1,7 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+
+        Pizza basicPizza = new TomatoSouce(new Mozzarella(new PlainPizza()));
+
+        System.out.println("Description" + basicPizza.getDescription());
+
     }
 
 }
